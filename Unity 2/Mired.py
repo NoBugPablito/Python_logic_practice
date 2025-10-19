@@ -1,0 +1,11 @@
+print("Bienvenido a MI RED :D ")
+a = input("Cual es tu nombre? ")
+b = input("Cual es la ciudad donde vives? ")
+c = int(input("Numero de telefono? "))
+d = int(input("Cual es tu edad? "))
+
+print("Estos son tus datos")
+print(a)
+print(b)
+print(c)
+print(d)

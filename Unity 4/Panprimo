@@ -1,0 +1,22 @@
+def panprimo(n):
+    n_str = str(n)
+    pandigital = True
+
+    for d in range(10):
+        if str(d) not in n_str:
+            pandigital = False
+            break
+
+    ultimos_tres = n%1000
+
+    if ultimos_tres < 2:
+        primo = False
+    else:
+        primo = True
+        for i in range(2, n):
+            if ultimos_tres % i == 0:
+                primo = False
+
+    return primo and pandigital
+
+        
